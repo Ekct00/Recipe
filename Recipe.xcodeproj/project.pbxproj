@@ -12,16 +12,28 @@
 		BF56DA601F5079D90057F9C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF56DA5E1F5079D90057F9C3 /* Main.storyboard */; };
 		BF56DA621F5079D90057F9C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF56DA611F5079D90057F9C3 /* Assets.xcassets */; };
 		BF56DA651F5079D90057F9C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF56DA631F5079D90057F9C3 /* LaunchScreen.storyboard */; };
+		BF56DA6D1F51EBD10057F9C3 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56DA6C1F51EBD10057F9C3 /* AddViewController.swift */; };
+		BF56DA6F1F51EBFF0057F9C3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF56DA6E1F51EBFF0057F9C3 /* DetailViewController.swift */; };
+		BF99F8151F53055800C491B2 /* customcell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99F8141F53055800C491B2 /* customcell.swift */; };
+		BF99F8171F530BA600C491B2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99F8161F530BA600C491B2 /* Recipe.swift */; };
+		BF99F8191F530C4000C491B2 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99F8181F530C4000C491B2 /* RecipeManager.swift */; };
+		BF99F81B1F54814800C491B2 /* NSUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF99F81A1F54814800C491B2 /* NSUserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BF56DA571F5079D90057F9C3 /* recipe1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recipe1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF56DA571F5079D90057F9C3 /* Recipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF56DA5A1F5079D90057F9C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF56DA5C1F5079D90057F9C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF56DA5F1F5079D90057F9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF56DA611F5079D90057F9C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF56DA641F5079D90057F9C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF56DA661F5079D90057F9C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF56DA6C1F51EBD10057F9C3 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		BF56DA6E1F51EBFF0057F9C3 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BF99F8141F53055800C491B2 /* customcell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customcell.swift; sourceTree = "<group>"; };
+		BF99F8161F530BA600C491B2 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BF99F8181F530C4000C491B2 /* RecipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		BF99F81A1F54814800C491B2 /* NSUserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSUserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +50,7 @@
 		BF56DA4E1F5079D90057F9C3 = {
 			isa = PBXGroup;
 			children = (
-				BF56DA591F5079D90057F9C3 /* recipe1 */,
+				BF56DA591F5079D90057F9C3 /* recipe */,
 				BF56DA581F5079D90057F9C3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,30 +58,37 @@
 		BF56DA581F5079D90057F9C3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BF56DA571F5079D90057F9C3 /* recipe1.app */,
+				BF56DA571F5079D90057F9C3 /* Recipe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BF56DA591F5079D90057F9C3 /* recipe1 */ = {
+		BF56DA591F5079D90057F9C3 /* recipe */ = {
 			isa = PBXGroup;
 			children = (
+				BF99F81A1F54814800C491B2 /* NSUserDefaultsManager.swift */,
+				BF99F8141F53055800C491B2 /* customcell.swift */,
 				BF56DA5A1F5079D90057F9C3 /* AppDelegate.swift */,
 				BF56DA5C1F5079D90057F9C3 /* ViewController.swift */,
+				BF56DA6C1F51EBD10057F9C3 /* AddViewController.swift */,
+				BF56DA6E1F51EBFF0057F9C3 /* DetailViewController.swift */,
+				BF99F8161F530BA600C491B2 /* Recipe.swift */,
+				BF99F8181F530C4000C491B2 /* RecipeManager.swift */,
 				BF56DA5E1F5079D90057F9C3 /* Main.storyboard */,
 				BF56DA611F5079D90057F9C3 /* Assets.xcassets */,
 				BF56DA631F5079D90057F9C3 /* LaunchScreen.storyboard */,
 				BF56DA661F5079D90057F9C3 /* Info.plist */,
 			);
+			name = recipe;
 			path = recipe1;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BF56DA561F5079D90057F9C3 /* recipe1 */ = {
+		BF56DA561F5079D90057F9C3 /* Recipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BF56DA691F5079D90057F9C3 /* Build configuration list for PBXNativeTarget "recipe1" */;
+			buildConfigurationList = BF56DA691F5079D90057F9C3 /* Build configuration list for PBXNativeTarget "Recipe" */;
 			buildPhases = (
 				BF56DA531F5079D90057F9C3 /* Sources */,
 				BF56DA541F5079D90057F9C3 /* Frameworks */,
@@ -79,9 +98,9 @@
 			);
 			dependencies = (
 			);
-			name = recipe1;
+			name = Recipe;
 			productName = recipe1;
-			productReference = BF56DA571F5079D90057F9C3 /* recipe1.app */;
+			productReference = BF56DA571F5079D90057F9C3 /* Recipe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +120,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BF56DA521F5079D90057F9C3 /* Build configuration list for PBXProject "recipe1" */;
+			buildConfigurationList = BF56DA521F5079D90057F9C3 /* Build configuration list for PBXProject "Recipe" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +133,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BF56DA561F5079D90057F9C3 /* recipe1 */,
+				BF56DA561F5079D90057F9C3 /* Recipe */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF99F8151F53055800C491B2 /* customcell.swift in Sources */,
+				BF99F81B1F54814800C491B2 /* NSUserDefaultsManager.swift in Sources */,
 				BF56DA5D1F5079D90057F9C3 /* ViewController.swift in Sources */,
 				BF56DA5B1F5079D90057F9C3 /* AppDelegate.swift in Sources */,
+				BF99F8171F530BA600C491B2 /* Recipe.swift in Sources */,
+				BF99F8191F530C4000C491B2 /* RecipeManager.swift in Sources */,
+				BF56DA6D1F51EBD10057F9C3 /* AddViewController.swift in Sources */,
+				BF56DA6F1F51EBFF0057F9C3 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +311,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF56DA521F5079D90057F9C3 /* Build configuration list for PBXProject "recipe1" */ = {
+		BF56DA521F5079D90057F9C3 /* Build configuration list for PBXProject "Recipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF56DA671F5079D90057F9C3 /* Debug */,
@@ -295,13 +320,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BF56DA691F5079D90057F9C3 /* Build configuration list for PBXNativeTarget "recipe1" */ = {
+		BF56DA691F5079D90057F9C3 /* Build configuration list for PBXNativeTarget "Recipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF56DA6A1F5079D90057F9C3 /* Debug */,
 				BF56DA6B1F5079D90057F9C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
